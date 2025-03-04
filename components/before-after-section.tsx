@@ -20,26 +20,25 @@ export default function BeforeAfterSection() {
     {
       id: 1,
       title: "Caso 1 - Transplante Frontal",
-      beforeImage: "/placeholder.svg?height=600&width=800",
-      afterImage: "/placeholder.svg?height=600&width=800",
+      beforeImage: "/Caso1_antes.png",
+      afterImage: "/Caso1_depois.png",
     },
     {
       id: 2,
       title: "Caso 2 - Transplante Coronal",
-      beforeImage: "/placeholder.svg?height=600&width=800",
-      afterImage: "/placeholder.svg?height=600&width=800",
+      beforeImage: "/Caso2_antes.png",
+      afterImage: "/Caso2_depois.png",
     },
     {
       id: 3,
       title: "Caso 3 - Transplante Total",
-      beforeImage: "/placeholder.svg?height=600&width=800",
-      afterImage: "/placeholder.svg?height=600&width=800",
+      beforeImage: "/Caso3_antes.png",
+      afterImage: "/Caso3_depois.png",
     },
   ]
 
   const [currentCase, setCurrentCase] = useState(cases[0])
 
-  // Função para manipular o slider diretamente na imagem
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (sliderRef.current) {
       const rect = sliderRef.current.getBoundingClientRect()
@@ -92,10 +91,20 @@ export default function BeforeAfterSection() {
           onTouchMove={handleTouchMove}
         >
           <div className="absolute inset-0">
-            <Image src={currentCase.afterImage || "/placeholder.svg"} alt="Depois" fill className="object-cover" />
+            <Image
+              src={currentCase.afterImage || "/placeholder.svg"}
+              alt="Depois"
+              fill
+              style={{ objectFit: "cover" }}
+            />
           </div>
           <div className="absolute inset-0 overflow-hidden" style={{ width: `${sliderValue}%` }}>
-            <Image src={currentCase.beforeImage || "/placeholder.svg"} alt="Antes" fill className="object-cover" />
+            <Image
+              src={currentCase.beforeImage || "/placeholder.svg"}
+              alt="Antes"
+              fill
+              style={{ objectFit: "cover" }}
+            />
           </div>
           <div
             className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
@@ -105,8 +114,6 @@ export default function BeforeAfterSection() {
           <div className="absolute bottom-4 left-4 bg-black/70 text-white px-2 py-1 rounded text-sm">Antes</div>
           <div className="absolute bottom-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">Depois</div>
         </div>
-
-        {/* Removido o slider abaixo da imagem */}
       </div>
     </section>
   )
