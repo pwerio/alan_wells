@@ -11,8 +11,8 @@ export default function MapSection() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold">Endereço:</h3>
-                <p>Av. Paulista, 1000 - Bela Vista</p>
-                <p>São Paulo - SP, 01310-100</p>
+                <p>Av. Angélica, 2.530 - Bela Vista</p>
+                <p>São Paulo - SP, 01228-200</p>
               </div>
               <div>
                 <h3 className="font-semibold">Horário de Funcionamento:</h3>
@@ -21,7 +21,7 @@ export default function MapSection() {
               </div>
               <div>
                 <h3 className="font-semibold">Contato:</h3>
-                <p>Telefone: (11) 95050-7175</p>
+                <p>Telefone: (11) 98711-2969</p>
                 <p>Email: contato@wellsclinic.com.br</p>
               </div>
             </div>
