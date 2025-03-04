@@ -10,18 +10,18 @@ export default function Header() {
         <div className="container flex h-10 items-center justify-between text-sm">
           <div className="hidden md:flex items-center space-x-4">
             <span className="hover:text-gray-300 transition-colors">Horário: Seg-Sex 8h às 18h | Sáb 8h às 12h</span>
-            <span className="hover:text-gray-300 transition-colors">Av. Paulista, 1000 - São Paulo, SP</span>
+            <span className="hover:text-gray-300 transition-colors">Av. Angélica, 2.530 - São Paulo, SP</span>
           </div>
           <div className="flex items-center space-x-4 ml-auto">
-            <Link href="https://facebook.com" className="text-white hover:text-gray-300 transition-colors">
+            <Link href="https://facebook.com/dralanwellsoficial/" className="text-white hover:text-gray-300 transition-colors">
               <Facebook className="h-4 w-4" />
               <span className="sr-only">Facebook</span>
             </Link>
-            <Link href="https://instagram.com" className="text-white hover:text-gray-300 transition-colors">
+            <Link href="https://www.instagram.com/dralanwells/" className="text-white hover:text-gray-300 transition-colors">
               <Instagram className="h-4 w-4" />
               <span className="sr-only">Instagram</span>
             </Link>
-            <Link href="https://youtube.com" className="text-white hover:text-gray-300 transition-colors">
+            <Link href="https://www.youtube.com/@ImplanteCapilar" className="text-white hover:text-gray-300 transition-colors">
               <Youtube className="h-4 w-4" />
               <span className="sr-only">Youtube</span>
             </Link>
