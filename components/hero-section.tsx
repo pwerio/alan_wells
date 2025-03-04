@@ -13,7 +13,7 @@ export default function HeroSection() {
     "Melhorar o seu visual",
   ]
 
-  const heroImages = ["Hero_01", "Hero_02", "Hero_03"]
+  const heroImages = ["Hero_01.png", "Hero_02.png", "Hero_03.png"]
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
