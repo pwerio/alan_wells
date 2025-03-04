@@ -6,10 +6,10 @@ import SimpleCarousel from "./simple-carousel"
 
 export default function HeroSection() {
   const phrases = [
-    "Fazer um Transplante Capilar Natural",
-    "Voltar a ter confiança no seu cabelo",
-    "Aumentar a sua auto estima",
-    "Melhorar o seu visual",
+    "realizar um Transplante Capilar Natural",
+    "voltar a ter Confiança",
+    "aumentar a sua Auto Estima",
+    "melhorar o seu Visual",
   ]
 
   const heroImages = ["Hero_01", "Hero_02", "Hero_03"]
