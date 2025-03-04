@@ -36,7 +36,7 @@ export default function HeroSection() {
           {[1, 2, 3].map((_, index) => (
             <CarouselItem key={index} className="w-full h-full">
               <Image
-                src={`/Hero_01?height=1080&width=1920&text=Imagem+Hero+${index + 1}`}
+                src={`/Hero_01.png?height=1080&width=1920&text=Imagem+Hero+${index + 1}`}
                 alt={`Hero Slide ${index + 1}`}
                 layout="fill"
                 objectFit="cover"
