@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import Image from "next/image"
+import SimpleCarousel from "./simple-carousel"
 
 export default function HeroSection() {
   const phrases = [
@@ -33,25 +32,7 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative h-screen">
-      <Carousel className="w-full h-full" opts={{ loop: true }}>
-        <CarouselContent>
-          {heroImages.map((image, index) => (
-            <CarouselItem key={index} className="w-full h-full">
-              <div className="relative w-full h-full">
-                <Image
-                  src={`/${image}.png`}
-                  alt={`Hero Slide ${index + 1}`}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  priority
-                />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="absolute left-4 z-20" />
-        <CarouselNext className="absolute right-4 z-20" />
-      </Carousel>
+      <SimpleCarousel images={heroImages} />
 
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
 

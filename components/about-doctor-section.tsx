@@ -46,7 +46,7 @@ export default function AboutDoctorSection() {
             </div>
           </div>
           <div className="relative aspect-square md:aspect-auto md:h-full rounded-lg overflow-hidden">
-            <Image src="/alan wells_02.png" alt="Dr. Alan Wells" fill className="object-cover" />
+            <Image src="/placeholder.svg?height=800&width=600" alt="Dr. Alan Wells" fill className="object-cover" />
           </div>
         </div>
       </div>
