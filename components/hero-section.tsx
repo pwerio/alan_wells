@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import SimpleCarousel from "./simple-carousel"
 
@@ -34,32 +35,29 @@ export default function HeroSection() {
     <section id="home" className="relative h-screen">
       <SimpleCarousel images={heroImages} />
 
-      {/* Removido o div com o filtro escuro */}
-
       <div className="absolute inset-0 z-20 flex items-center">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl text-left text-white">
-            {" "}
-            {/* Alterado para text-left */}
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6">
-              <p>Dr. Alan</p>
-              <p>Expert</p>
-              <p>renovamdo</p>
-              <p>mundialmente</p>
-              <p>no Transplante</p>
-              <p>Capilar Natural</p>
-            </h1>
+            <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
+              <p className="text-4xl md:text-6xl font-bold tracking-tighter mb-2">Dr. Alan</p>
+              <p className="text-4xl md:text-6xl font-bold tracking-tighter mb-2">Expert</p>
+              <p className="text-4xl md:text-6xl font-bold tracking-tighter mb-2">renovamdo</p>
+              <p className="text-4xl md:text-6xl font-bold tracking-tighter mb-2">mundialmente</p>
+              <p className="text-4xl md:text-6xl font-bold tracking-tighter mb-2">no Transplante</p>
+              <p className="text-4xl md:text-6xl font-bold tracking-tighter mb-6">Capilar Natural</p>
+            </motion.div>
             <div className="mb-8">
-              <h2 className="text-2xl md:text-3xl font-medium mb-2">
-                {" "}
-                {/* Aumentado o tamanho da fonte */}
-                Este é o lugar certo para
-              </h2>
-              <span
-                className={`text-2xl md:text-3xl font-medium text-primary transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
+              <h2 className="text-2xl md:text-3xl font-medium mb-2">Este é o lugar certo para</h2>
+              <motion.div
+                key={currentPhraseIndex}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ duration: 0.5 }}
+                className="h-12"
               >
-                {phrases[currentPhraseIndex]}
-              </span>
+                <span className="text-2xl md:text-3xl font-medium text-primary">{phrases[currentPhraseIndex]}</span>
+              </motion.div>
             </div>
             <Button size="lg" className="mt-6">
               Agende sua consulta
