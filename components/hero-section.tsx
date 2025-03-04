@@ -42,13 +42,18 @@ export default function HeroSection() {
             {" "}
             {/* Alterado para text-left */}
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6">
-              Você entrou no site do renomado mundialmente Dr. Alan Wells
+              <p>Dr. Alan</p>
+              <p>Expert</p>
+              <p>renovamdo</p>
+              <p>mundialmente</p>
+              <p>no Transplante</p>
+              <p>Capilar Natural</p>
             </h1>
             <div className="mb-8">
               <h2 className="text-2xl md:text-3xl font-medium mb-2">
                 {" "}
                 {/* Aumentado o tamanho da fonte */}
-                Você veio ao lugar certo caso você queira
+                Este é o lugar certo para
               </h2>
               <span
                 className={`text-2xl md:text-3xl font-medium text-primary transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
