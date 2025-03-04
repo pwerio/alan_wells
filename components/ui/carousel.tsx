@@ -139,7 +139,7 @@ const CarouselContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HT
     const { carouselRef, orientation } = useCarousel()
 
     return (
-      <div ref={carouselRef} className="overflow-hidden">
+      <div ref={carouselRef} className="overflow-hidden h-full">
         <div
           ref={ref}
           className={cn("flex", orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col", className)}
@@ -178,9 +178,9 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
         variant={variant}
         size={size}
         className={cn(
-          "absolute h-12 w-12 rounded-full bg-white/80 hover:bg-white",
+          "absolute h-8 w-8 rounded-full",
           orientation === "horizontal"
-            ? "left-4 top-1/2 -translate-y-1/2"
+            ? "-left-12 top-1/2 -translate-y-1/2"
             : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
           className,
         )}
@@ -188,8 +188,8 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
         onClick={scrollPrev}
         {...props}
       >
-        <ArrowLeft className="h-6 w-6" />
-        <span className="sr-only">Slide anterior</span>
+        <ArrowLeft className="h-4 w-4" />
+        <span className="sr-only">Previous slide</span>
       </Button>
     )
   },
@@ -206,9 +206,9 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
         variant={variant}
         size={size}
         className={cn(
-          "absolute h-12 w-12 rounded-full bg-white/80 hover:bg-white",
+          "absolute h-8 w-8 rounded-full",
           orientation === "horizontal"
-            ? "right-4 top-1/2 -translate-y-1/2"
+            ? "-right-12 top-1/2 -translate-y-1/2"
             : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
           className,
         )}
@@ -216,8 +216,8 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
         onClick={scrollNext}
         {...props}
       >
-        <ArrowRight className="h-6 w-6" />
-        <span className="sr-only">Próximo slide</span>
+        <ArrowRight className="h-4 w-4" />
+        <span className="sr-only">Next slide</span>
       </Button>
     )
   },
