@@ -6,7 +6,7 @@ export default function SurgerySection() {
           <div>
             <div className="aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://youtu.be/6T_umCRfdvo?si=lpgrpS4Rkkdcq8qU"
+                src="https://youtu.be/kPa7bsKwL-c?si=52zXcwxh-qWpCTnC"
                 className="w-full h-full"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
