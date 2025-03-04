@@ -6,7 +6,7 @@ export default function PostOpSection() {
           <div className="md:order-2">
             <div className="aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                src="https://youtu.be/61JMDcqCxr8?si=yhgcXTkSu4FaYkX0"
                 className="w-full h-full"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
