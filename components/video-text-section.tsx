@@ -20,7 +20,7 @@ export default function VideoTextSection({
           <div className={`${videoOnLeft ? "md:order-1" : "md:order-2"}`}>
             <div className="aspect-video rounded-lg overflow-hidden">
               <iframe
-                src={videoUrl}
+                src={`https://www.youtube.com/embed/${videoUrl.split("v=")[1]}`}
                 className="w-full h-full"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

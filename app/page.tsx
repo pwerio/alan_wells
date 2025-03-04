@@ -24,7 +24,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <VideoTextSection
-          videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          videoUrl="https://www.youtube.com/watch?v=xodzBvKE42c"
           title="Tecnologia Mundialmente Reconhecida"
           text="Trabalhamos com uma tecnologia mundialmente reconhecida como a melhor para dar maior naturalidade. Realizamos o Transplante Capilar utilizando somente unidades foliculares, uma a uma e fazendo micro orifícios com orientação coronal para que a direção dos cabelos seja exatamente como o cabelo natural. Nossas lâminas variam de 0,6 até no máximo 1 mm, para que possamos atingir alta densidade na colocação. Uma equipe de 8 pessoas nos permite realizar mega e giga sessões."
           doctorName="Dr. Alan Wells"
