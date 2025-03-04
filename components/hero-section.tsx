@@ -34,18 +34,24 @@ export default function HeroSection() {
     <section id="home" className="relative h-screen">
       <SimpleCarousel images={heroImages} />
 
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+      {/* Removido o div com o filtro escuro */}
 
-      <div className="absolute inset-0 z-20 flex items-center justify-center">
+      <div className="absolute inset-0 z-20 flex items-center">
         <div className="container px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center text-white">
+          <div className="max-w-3xl text-left text-white">
+            {" "}
+            {/* Alterado para text-left */}
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6">
               Você entrou no site do renomado mundialmente Dr. Alan Wells
             </h1>
-            <div className="h-16 flex flex-col items-center justify-center mb-8">
-              <h2 className="text-xl md:text-2xl font-medium">Você veio ao lugar certo caso você queira</h2>
+            <div className="mb-8">
+              <h2 className="text-2xl md:text-3xl font-medium mb-2">
+                {" "}
+                {/* Aumentado o tamanho da fonte */}
+                Você veio ao lugar certo caso você queira
+              </h2>
               <span
-                className={`text-xl md:text-2xl font-medium text-primary transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
+                className={`text-2xl md:text-3xl font-medium text-primary transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
               >
                 {phrases[currentPhraseIndex]}
               </span>
